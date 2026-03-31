@@ -8,8 +8,12 @@
     <!-- External Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
 
     <style>
         :root {
@@ -51,7 +55,7 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'DM Sans', sans-serif;
             background-color: var(--bg-body);
             color: var(--text-main);
             min-height: 100vh;
@@ -95,6 +99,7 @@
         }
 
         .header h2 {
+            font-family: 'Syne', sans-serif;
             font-size: 2.25rem;
             font-weight: 700;
             background: var(--header-gradient);
@@ -320,6 +325,7 @@
         }
 
         #preview-container h3 {
+            font-family: 'Syne', sans-serif;
             font-size: 1.25rem;
             font-weight: 600;
             border-bottom: 2px solid var(--border-color);
@@ -436,7 +442,7 @@
                     Ukuran Overlap:
                 </label>
                 <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <input type="number" id="overlap-input" value="3" min="0" step="1">
+                    <input type="number" id="overlap-input" value="2" min="0" step="1">
                     <span style="font-weight: 500; color: var(--text-muted)">mm</span>
                 </div>
             </div>
